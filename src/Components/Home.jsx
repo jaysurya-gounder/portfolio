@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import 'boxicons'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Link } from 'react-router-dom';
 
 function Home() {
     useEffect(() => {
