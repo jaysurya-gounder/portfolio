@@ -30,7 +30,7 @@ import AnimatedComponent from './AnimatedComponent'
                     <div className='w-full h-fit grid grid-rows-3 grid-flow-col gap-5 max-md:grid-cols-1 max-md:grid-flow-row'>
                         <div data-aos="fade-up" data-aos-duration='1000' className='h-64 flex border-[1px] border-[rgb(50_50_50)] rounded-lg max-md:h-80 max-md:py-3 max-md:flex-col max-md:items-center'>
                             <div className='w-[30%] h-full flex justify-center items-center max-md:w-[40%] max-md:self-start max-md:justify-start max-md:ps-4'>
-                                <img src='/public/images/0.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
+                                <img src='../../public/images/0.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
                             </div>
                             <div className='w-[70%] h-full flex flex-col justify-center max-md:w-[90%]'>
                                 <div className='w-[75%] h-fit mb-5 text-white text-2xl font-medium max-md:w-full max-md:text-xl'>React.js Application Development </div>
@@ -39,7 +39,7 @@ import AnimatedComponent from './AnimatedComponent'
                         </div>
                         <div data-aos="fade-up" data-aos-duration='1000' className='h-64 flex border-[1px] border-[rgb(50_50_50)] rounded-lg max-md:h-80 max-md:py-3 max-md:flex-col max-md:items-center'>
                             <div className='w-[30%] h-full flex justify-center items-center max-md:w-[40%] max-md:self-start max-md:justify-start max-md:ps-4'>
-                                <img src='/public/images/0.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
+                                <img src='../../public/images/0.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
                             </div>
                             <div className='w-[70%] h-full flex flex-col justify-center max-md:w-[90%]'>
                                 <div className='w-[75%] h-fit mb-5 text-white text-2xl font-medium max-md:w-full max-md:text-xl'>Responsive Web Design </div>
@@ -48,7 +48,7 @@ import AnimatedComponent from './AnimatedComponent'
                         </div>
                         <div data-aos="fade-up" data-aos-duration='1000' className='h-64 flex border-[1px] border-[rgb(50_50_50)] rounded-lg max-md:h-80 max-md:py-3 max-md:flex-col max-md:items-center'>
                             <div className='w-[30%] h-full flex justify-center items-center max-md:w-[40%] max-md:self-start max-md:justify-start max-md:ps-4'>
-                                <img src='/public/images/0.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
+                                <img src='../../public/images/0.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
                             </div>
                             <div className='w-[70%] h-full flex flex-col justify-center max-md:w-[90%]'>
                                 <div className='w-[75%] h-fit mb-5 text-white text-2xl font-medium max-md:w-full max-md:text-xl'>UI/UX Design Integration </div>
@@ -57,7 +57,7 @@ import AnimatedComponent from './AnimatedComponent'
                         </div>
                         <div data-aos="fade-up" data-aos-duration='1000' className='h-64 flex border-[1px] border-[rgb(50_50_50)] rounded-lg max-md:h-80 max-md:py-3 max-md:flex-col max-md:items-center'>
                             <div className='w-[30%] h-full flex justify-center items-center max-md:w-[40%] max-md:self-start max-md:justify-start max-md:ps-4'>
-                                <img src='/public/images/1.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
+                                <img src='../../public/images/1.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
                             </div>
                             <div className='w-[70%] h-full flex flex-col justify-center max-md:w-[90%]'>
                                 <div className='w-[75%] h-fit mb-5 text-white text-2xl font-medium max-md:w-full max-md:text-xl'>Component Development </div>
@@ -66,7 +66,7 @@ import AnimatedComponent from './AnimatedComponent'
                         </div>
                         <div data-aos="fade-up" data-aos-duration='1000' className='h-64 flex border-[1px] border-[rgb(50_50_50)] rounded-lg max-md:h-80 max-md:py-3 max-md:flex-col max-md:items-center'>
                             <div className='w-[30%] h-full flex justify-center items-center max-md:w-[40%] max-md:self-start max-md:justify-start max-md:ps-4'>
-                                <img src='/public/images/1.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
+                                <img src='../../public/images/1.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
                             </div>
                             <div className='w-[70%] h-full flex flex-col justify-center max-md:w-[90%]'>
                                 <div className='w-[75%] h-fit mb-5 text-white text-2xl font-medium max-md:w-full max-md:text-xl'>State Management </div>
@@ -75,7 +75,7 @@ import AnimatedComponent from './AnimatedComponent'
                         </div>
                         <div data-aos="fade-up" data-aos-duration='1000' className='h-64 flex border-[1px] border-[rgb(50_50_50)] rounded-lg max-md:h-80 max-md:py-3 max-md:flex-col max-md:items-center'>
                             <div className='w-[30%] h-full flex justify-center items-center max-md:w-[40%] max-md:self-start max-md:justify-start max-md:ps-4'>
-                                <img src='/public/images/1.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
+                                <img src='../../public/images/1.png' className='w-24 h-24 max-md:w-20 max-md:h-20' />
                             </div>
                             <div className='w-[70%] h-full flex flex-col justify-center max-md:w-[90%]'>
                                 <div className='w-[75%] h-fit mb-5 text-white text-2xl font-medium max-md:w-full max-md:text-xl'>API Integration</div>
