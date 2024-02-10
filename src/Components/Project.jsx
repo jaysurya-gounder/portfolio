@@ -33,7 +33,7 @@ const Project = () => {
                                 <img data-aos="fade-right" data-aos-duration='2000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/fashionhub.jpg'} />
                             </div>
                             <div className='w-full h-10 justify-between items-center flex text-white my-3'>
-                                <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl'>Fashion Hub (Shopify Web App)</div>
+                                <a href='https://github.com/jaysurya-gounder/fashionhub' target="_blank" rel="noopener noreferrer"><div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl cursor-pointer'>Fashion Hub (Shopify Web App)</div></a>
                                 <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-base'>© 2024</div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ const Project = () => {
                                 <img data-aos="fade-left" data-aos-duration='2000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/snapify.jpg'} />
                             </div>
                             <div className='w-full h-10 justify-between items-center flex text-white my-3'>
-                                <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl'>Snapify (Social Media App)</div>
+                            <a href='https://github.com/jaysurya-gounder/Snapify' target="_blank" rel="noopener noreferrer"><div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl cursor-pointer'>Snapify (Social Media App)</div></a>
                                 <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-base'>© 2023</div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ const Project = () => {
                                 <img data-aos="fade-right" data-aos-duration='2000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/handloom.jpg'} />
                             </div>
                             <div className='w-full h-10 justify-between items-center flex text-white my-3'>
-                                <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl'>Handloom (Shopify Web App)</div>
+                            <a href='https://jaysurya-gounder.github.io/handloom/' target="_blank" rel="noopener noreferrer"><div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl cursor-pointer'>Handloom (Shopify Web App)</div></a>
                                 <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-base'>© 2023</div>
                             </div>
                         </div>
