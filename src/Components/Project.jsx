@@ -30,7 +30,7 @@ const Project = () => {
                     <div className='w-full h-fit grid grid-cols-2 gap-10 mb-5 max-md:grid-cols-1'>
                         <div className='h-fit'>
                             <div className='w-full h-96 rounded-xl'>
-                                <img data-aos="fade-right" data-aos-duration='2000' className='w-full h-full rounded-xl' src='../../public/images/fashionhub.jpg' />
+                                <img data-aos="fade-right" data-aos-duration='2000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/fashionhub.jpg'} />
                             </div>
                             <div className='w-full h-10 justify-between items-center flex text-white my-3'>
                                 <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl'>Fashion Hub (Shopify Web App)</div>
@@ -39,7 +39,7 @@ const Project = () => {
                         </div>
                         <div className='h-fit'>
                             <div className='w-full h-96 rounded-xl'>
-                                <img data-aos="fade-left" data-aos-duration='2000' className='w-full h-full rounded-xl' src='../../public/images/snapify.jpg' />
+                                <img data-aos="fade-left" data-aos-duration='2000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/snapify.jpg'} />
                             </div>
                             <div className='w-full h-10 justify-between items-center flex text-white my-3'>
                                 <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl'>Snapify (Social Media App)</div>
@@ -50,7 +50,7 @@ const Project = () => {
                     <div className='w-full h-fit grid grid-cols-3 gap-10 max-md:grid-cols-1'>
                         <div className='h-fit'>
                             <div className='w-full h-96 rounded-xl'>
-                                <img data-aos="fade-right" data-aos-duration='2000' className='w-full h-full rounded-xl' src='../../public/images/handloom.jpg' />
+                                <img data-aos="fade-right" data-aos-duration='2000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/handloom.jpg'} />
                             </div>
                             <div className='w-full h-10 justify-between items-center flex text-white my-3'>
                                 <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl'>Handloom (Shopify Web App)</div>
@@ -59,7 +59,7 @@ const Project = () => {
                         </div>
                         <div className='h-fit'>
                             <div className='w-full h-96 rounded-xl'>
-                                <img data-aos="zoom-in" data-aos-duration='3000' className='w-full h-full rounded-xl' src='../../public/images/photo2.jpg' />
+                                <img data-aos="zoom-in" data-aos-duration='3000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/photo2.jpg'} />
                             </div>
                             <div className='w-full h-10 justify-between items-center flex text-white my-3'>
                                 <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl'>GeekFolio Architecture</div>
@@ -68,7 +68,7 @@ const Project = () => {
                         </div>
                         <div className='h-fit'>
                             <div className='w-full h-96 rounded-xl'>
-                                <img data-aos="fade-left" data-aos-duration='2000' className='w-full h-full rounded-xl' src='../../public/images/photo2.jpg' />
+                                <img data-aos="fade-left" data-aos-duration='2000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/photo2.jpg'} />
                             </div>
                             <div className='w-full h-10 justify-between items-center flex text-white my-3'>
                                 <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-2xl font-semibold max-md:text-xl'>GeekFolio Architecture</div>
