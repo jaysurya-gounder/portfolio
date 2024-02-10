@@ -35,7 +35,7 @@ function Home() {
                 </div>
             </div>
             <div className='absolute md:hidden w-full h-full z-10 bg-[rgb(29_29_29)] opacity-70 right-0 top-0' ></div>
-            <img className='absolute object-cover md:hidden w-full h-full z-10 bg-[rgb(29_29_29)]  opacity-40 right-0 top-0' src={process.env.PUBLIC_URL + '/images/photo2.jpg'}
+            <img className='absolute object-cover md:hidden w-full h-full z-10 bg-[rgb(29_29_29)]  opacity-40 right-0 top-0' src={process.env.PUBLIC_URL + '/images/photo2.jpg'} />
             <img data-aos="zoom-in" data-aos-duration="5000" className='absolute w-[35%] h-fit right-[10%] top-3 max-md:hidden' src={process.env.PUBLIC_URL + '/images/main.png'} />
             <div data-aos="fade-left" data-aos-duration="2000" className='absolute z-10 flex flex-col gap-5 top-[35%] end-3 max-md:flex-row max-md:flex-wrap max-md:h-fit max-md:top-[460px] max-md:start-5'>
                 <a href='https://github.com/jaysurya-gounder' target="_blank" rel="noopener noreferrer" className='w-10 h-10 flex items-center justify-center bg-white rounded-full cursor-pointer transition-transform hover:scale-125'><box-icon type='logo' name='github' animation='tada' size='30px' /></a>
