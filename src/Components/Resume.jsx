@@ -20,7 +20,7 @@ function Resume() {
                             >My Experience</div>
                         </div>
                         <div className='w-full h-1/2 max-md:h-fit'>
-                            <div className='w-full h-full grid grid-rows-1 grid-flow-col gap-5 max-md:grid-cols-3 max-md:grid-flow-row'>
+                            <div className='w-full h-full grid grid-rows-1 grid-flow-col gap-5 max-md:grid-cols-3 max-md:grid-flow-row max-md:place-items-center'>
                                 <div data-aos="fade-right" data-aos-duration="1900" data-aos-easing="ease-in-sine" className='w-28 h-48 text-sm font-medium text-white border-[1px] rounded-full md:mix-blend-luminosity flex flex-col justify-center items-center hover:mix-blend-normal cursor-pointer'>
                                     <div className='w-16 h-16 mb-2 bg-html bg-cover'></div>
                                     <div className=''>HTML & CSS</div>

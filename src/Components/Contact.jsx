@@ -1,6 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
+    const [success, setSuccess] = useState(false)
+    const [visible, setVisible] = useState(false)
+    const sendEmail = (e) => {
+        e.preventDefault();
+        const data = {
+            from_name: name,
+            reply_to: email,
+            from_email: email,
+            subject: subject,
+            message: message,
+        }
+        emailjs
+            .send('service_8ihqy1k', 'template_prq994u', data,
+                {
+                    publicKey: 'Y9QBixeQPuQ2obUTB',
+                })
+            .then(
+                () => {
+                    setSuccess(true);
+                    setVisible(true)
+
+                },
+                () => {
+                    setSuccess(false);
+                    setVisible(true);
+                },
+            );
+        setTimeout(() => {
+            setVisible(false)
+            setName('')
+            setEmail('')
+            setSubject('')
+            setMessage('')
+        }, 5000)
+
+    };
     return (
         <div className='w-full h-fit py-20 flex justify-center items-center bg-[rgb(27,27,27)] max-md:h-fit'>
             <div className='container w-[85%] h-full flex justify-center items-baseline max-md:w-[90%] max-md:flex-col'>
@@ -16,14 +57,51 @@ function Contact() {
                         <a href='https://www.linkedin.com/in/jaysurya-gounder-59248b244' target="_blank" rel="noopener noreferrer" data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-sine" className='w-10 h-10 flex items-center justify-center bg-white rounded-full cursor-pointer transition-transform hover:scale-125'><box-icon type='logo' name='linkedin' size='30px' animation='tada' /></a>
                     </div>
                 </div>
-                <form data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" className='w-1/2 h-full flex flex-col justify-center items-center max-md:w-full'>
+                <form data-aos="fade-left"
+                    onSubmit={sendEmail}
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine"
+                    className='w-1/2 h-full flex flex-col justify-center items-center max-md:w-full'>
                     <div className='w-full h-fit mb-8 flex justify-between max-md:flex-col max-md:mb-5'>
-                        <input className='w-[50%] h-14 p-4 text-white font-medium mr-10 border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:w-full max-md:mb-5' type='text' placeholder='Name' />
-                        <input className='w-[50%] h-14 p-4 text-white font-medium border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:w-full' type='email' placeholder='Email' />
+                        <input
+                            onChange={(e) => { setName(e.target.value) }}
+                            className='w-[50%] h-14 p-4 text-white font-medium mr-10 border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:w-full max-md:mb-5'
+                            value={name}
+                            type='text'
+                            placeholder='Name'
+                            name="user_name" />
+                        <input
+                            onChange={(e) => { setEmail(e.target.value) }}
+                            className='w-[50%] h-14 p-4 text-white font-medium border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:w-full'
+                            value={email}
+                            type='email'
+                            placeholder='Email'
+                            name="user_email" />
                     </div>
-                    <input className='w-full h-14 mb-8 p-4 text-white font-medium border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:mb-5' type='text' placeholder='Subject' />
-                    <textarea className='w-full h-60 mb-8 p-4 text-white font-medium border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:mb-5' placeholder='Message'></textarea>
-                    <button className='w-full h-14 border-[1px] border-white rounded-full font-medium text-white max-md:w-full hover:bg-white hover:text-black' type='submit'>Let's Talk</button>
+                    <input className='w-full h-14 mb-8 p-4 text-white font-medium border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:mb-5'
+                        onChange={(e) => { setSubject(e.target.value) }}
+                        value={subject}
+                        type='text'
+                        placeholder='Subject'
+                        name="subject" />
+                    <textarea
+                        onChange={(e) => { setMessage(e.target.value) }}
+                        className='w-full h-60 mb-8 p-4 text-white font-medium border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:mb-5'
+                        value={message}
+                        placeholder='Message'
+                        name="message" />
+                    <button className='w-full h-14 border-[1px] border-white rounded-full font-medium text-white max-md:w-full hover:bg-white hover:text-black'
+                        type='submit'
+                        value="Send">
+                        Let's Talk
+                    </button>
+                    <div className={visible ? "visible" : "invisible"}>
+                        {
+                            success ?
+                                <div className='w-fit h-8 flex gap-1 items-center text-lg mt-5 font-medium text-green-800 max-md:text-base'><box-icon name='check-circle' color='#166534' /><span>Thank you, Your message successfully sent</span></div> :
+                                <div className='w-fit h-8 flex gap-1 items-center text-lg mt-5 font-medium text-red-800 max-md:text-base'><box-icon name='x-circle' color='#991b1b' /> <span>Failed to send, Please send again</span> </div>
+                        }
+                    </div>
                 </form>
             </div>
         </div>
