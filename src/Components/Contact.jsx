@@ -47,8 +47,8 @@ function Contact() {
             <div className='container w-[85%] h-full flex justify-center items-baseline max-md:w-[90%] max-md:flex-col'>
                 <div className='w-1/2 h-full text-white max-md:w-full'>
                     <div data-aos="zoom-in" data-aos-duration="1000" className='w-fit h-fit my-5 px-8 py-2 text-sm font-semibold text-white border-[1px] border-[rbg(50,50,50)] rounded-full'>GET IN TOUCH</div>
-                    <div data-aos="flip-down" data-aos-duration="1000" className='text-7xl my-3 font-medium max-md:text-4xl max-md:font-bold'>Let's make your brand brilliant!</div>
-                    <div data-aos="zoom-in" data-aos-duration="1000" className='w-4/5 h-fit my-8 max-md:w-full max-md:my-4'>If you would like to work with us or just want to get in touch, we’d love to hear from you!</div>
+                    <div data-aos="flip-down" data-aos-duration="1000" className='text-7xl my-3 font-medium max-md:text-4xl max-md:font-bold'>Let's make your project brilliant!</div>
+                    <div data-aos="zoom-in" data-aos-duration="1000" className='w-4/5 h-fit my-8 max-md:w-full max-md:my-4'>If you would like to work with me or just want to get in touch, I’d love to hear from you!</div>
                     <div data-aos="zoom-in" data-aos-duration="1000" className='w-4/5 h-fit my-14 text-4xl underline max-md:text-3xl max-md:font-medium max-md:my-10'>+91 8320670510</div>
                     <div className='w-1/2 h-fit flex justify-between items-center max-md:w-2/3 max-md:mb-10'>
                         <a href='https://github.com/jaysurya-gounder' target="_blank" rel="noopener noreferrer" data-aos="fade-right" data-aos-duration="1600" data-aos-easing="ease-in-sine" className='w-10 h-10 flex items-center justify-center bg-white rounded-full cursor-pointer transition-transform hover:scale-125'><box-icon type='logo' name='github' size='30px' animation='tada' /></a>
