@@ -29,12 +29,12 @@ const Project = () => {
                     </div>
                     <div className='w-full h-fit grid grid-cols-2 gap-10 mb-5 max-md:grid-cols-1 max-md:gap-8 max-md:mb-6'>
                         <div className='h-fit cursor-pointer grid-active'>
-                            <a href='https://github.com/jaysurya-gounder/fashionhub' target="_blank" rel="noopener noreferrer">
+                            <a href='https://benevolent-chaja-f5ec6b.netlify.app' target="_blank" rel="noopener noreferrer">
                                 <div className='w-full h-96 rounded-xl'>
                                     <img data-aos="fade-right" data-aos-duration='2000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/fashionhub.jpg'} />
                                 </div>
                                 <div className='w-full h-10 justify-between items-center flex text-white my-3'>
-                                    <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-xl font-semibold max-md:text-lg'>Fashion Hub (Shopify Web App)</div>
+                                    <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-xl font-semibold max-md:text-lg'>Fashion Hub (Ecommerce Web App)</div>
                                     <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-base'>© 2024</div>
                                 </div>
                             </a>
@@ -51,25 +51,14 @@ const Project = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='w-full h-fit grid grid-cols-3 gap-10 max-md:grid-cols-1 max-md:gap-6'>
+                    <div className='w-full h-fit grid grid-cols-2 gap-10 max-md:grid-cols-1 max-md:gap-6'>
                         <div className='h-fit cursor-pointer grid-active'>
                             <a href='https://jaysurya-gounder.github.io/handloom/' target="_blank" rel="noopener noreferrer">
                                 <div className='w-full h-96 rounded-xl'>
                                     <img data-aos="fade-right" data-aos-duration='2000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/handloom.jpg'} />
                                 </div>
                                 <div className='w-full h-10 justify-between items-center flex text-white my-3'>
-                                    <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-xl font-semibold max-md:text-lg'>Handloom (Shopify Web App)</div>
-                                    <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-base'>© 2023</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div className='h-fit cursor-pointer grid-active'>
-                            <a href='https://github.com/jaysurya-gounder/Snapify' target="_blank" rel="noopener noreferrer">
-                                <div className='w-full h-96 rounded-xl'>
-                                    <img data-aos="zoom-in" data-aos-duration='3000' className='w-full h-full rounded-xl' src={process.env.PUBLIC_URL + '/images/photo2.jpg'} />
-                                </div>
-                                <div className='w-full h-10 justify-between items-center flex text-white my-3'>
-                                    <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-xl font-semibold max-md:text-lg'>GeekFolio Architecture</div>
+                                    <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-xl font-semibold max-md:text-lg'>Handloom (Ecommerce Web App)</div>
                                     <div data-aos="zoom-out" data-aos-duration='2000' className='w-fit h-fit text-base'>© 2023</div>
                                 </div>
                             </a>

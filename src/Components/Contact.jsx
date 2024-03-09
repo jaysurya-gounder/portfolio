@@ -69,27 +69,35 @@ function Contact() {
                             value={name}
                             type='text'
                             placeholder='Name'
-                            name="user_name" />
+                            name="user_name"
+                            required 
+                            />
                         <input
                             onChange={(e) => { setEmail(e.target.value) }}
                             className='w-[50%] h-14 p-4 text-white font-medium border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:w-full'
                             value={email}
                             type='email'
                             placeholder='Email'
-                            name="user_email" />
+                            name="user_email"
+                            required 
+                            />
                     </div>
                     <input className='w-full h-14 mb-8 p-4 text-white font-medium border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:mb-5'
                         onChange={(e) => { setSubject(e.target.value) }}
                         value={subject}
                         type='text'
                         placeholder='Subject'
-                        name="subject" />
+                        name="subject"
+                        required 
+                        />
                     <textarea
                         onChange={(e) => { setMessage(e.target.value) }}
                         className='w-full h-60 mb-8 p-4 text-white font-medium border-[1px] border-[rgb(50_50_50)] rounded-lg bg-transparent placeholder-gray-200 placeholder-opacity-30 max-md:mb-5'
                         value={message}
                         placeholder='Message'
-                        name="message" />
+                        name="message"
+                        required 
+                        />
                     <button className='w-full h-14 border-[1px] border-white rounded-full font-medium text-white max-md:w-full hover:bg-white hover:text-black'
                         type='submit'
                         value="Send">
