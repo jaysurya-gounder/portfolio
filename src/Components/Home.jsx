@@ -10,7 +10,7 @@ function Home() {
     }, []);
 
     const downloadFile = () => {
-        const filename = 'Jaysurya Resume React js .pdf';
+        const filename = 'Jaysurya Resume ReactJS .pdf';
         const url = process.env.PUBLIC_URL + '/data/' + filename;
         const a = document.createElement('a');
         a.href = url;
